@@ -25,7 +25,7 @@
 //    [self ClearStackWithError:error];
 //}
 
-- (void)ClearStackWithError:(NSError **)error
+- (void)ClearStack
 {
     [self removeAllObjects];
 }
@@ -70,6 +70,7 @@
         CustomErrorTool *errorTool = [CustomErrorTool shareInstance];
         errorTool.errorDescription = @"stack is empty !";
         *error = errorTool.error;
+        return nil;
     }
     else
     {

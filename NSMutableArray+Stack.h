@@ -11,7 +11,7 @@
 @interface NSMutableArray (Stack)
 
 - (id)         initStack;
-- (void)       ClearStackWithError :(NSError **) error;
+- (void)       ClearStack;
 - (BOOL)       isEmpty;
 - (NSInteger)  StatckLength;
 - (BOOL)       push:(id)object WithError : (NSError **) error;
