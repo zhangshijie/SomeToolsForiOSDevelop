@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 #import "ViewController.h"
+#import "NSMutableArray+Stack.h"
 
 @implementation AppDelegate
 
@@ -18,8 +19,23 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    
+    
+    NSMutableArray *stack = [[NSMutableArray alloc] initStack];
+    NSError *error = nil;
+    if(![stack push:@"1" WithError:&error])
+    {
+        NSLog(@"%@",[error localizedDescription]);
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

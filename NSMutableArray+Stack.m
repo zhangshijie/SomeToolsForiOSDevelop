@@ -8,38 +8,86 @@
 //
 
 #import "NSMutableArray+Stack.h"
+#import "CustomErrorTool.h"
 
 @implementation NSMutableArray (Stack)
 
-
-- (void) push:(id)object
+- (id)initStack
 {
-    if(object!=nil)
+    self = [super init];
+    
+    return self;
+}
+
+
+//- (void)DestroyStackwithError:(NSError **)error
+//{
+//    [self ClearStackWithError:error];
+//}
+
+- (void)ClearStackWithError:(NSError **)error
+{
+    [self removeAllObjects];
+}
+
+- (BOOL)isEmpty
+{
+    return self.isEmpty;
+}
+
+- (NSInteger )StatckLength
+{
+    return self.count;
+}
+
+- (BOOL) push:(id)object WithError : (NSError **) error
+{
+    if(self.isEmpty)
+    {
+        CustomErrorTool *errorTool = [CustomErrorTool shareInstance];
+        errorTool.errorDescription = @"stack is empty !";
+        *error = errorTool.error;
+        return NO;
+    }
+    else
     {
         [self addObject:object];
     }
+    return YES;
 }
 
-- (id) pop
+- (id) popWithError : (NSError **) error
 {
-    if ([self count]==0) {
-        return;
-    }
-    
-    id object = [[self lastObject ]retain];
-    
+    id object =[self getTopWithError:error];
     [self removeLastObject];
-     
-    return object;
+    return  object;
 }
 
-- (void)dropBottom
+- (id)  getTopWithError :(NSError **) error
 {
-    if ([self count]==0) {
-        return;
+    if (self.isEmpty)
+    {
+        CustomErrorTool *errorTool = [CustomErrorTool shareInstance];
+        errorTool.errorDescription = @"stack is empty !";
+        *error = errorTool.error;
     }
-    
-    [self removeObjectAtIndex:0];
+    else
+    {
+        id object = [self lastObject ];
+        return object;
+    }
+    return nil;
 }
+
+//- (void) dropBottomWithError : (NSError **) error
+//{
+//    if (self.isEmpty) {
+//        CustomErrorTool *errorTool = [CustomErrorTool shareInstance];
+//        errorTool.errorDescription = @"stack is empty !";
+//        *error = errorTool.error;
+//    }
+//    
+//    [self removeObjectAtIndex:0];
+//}
 
 @end

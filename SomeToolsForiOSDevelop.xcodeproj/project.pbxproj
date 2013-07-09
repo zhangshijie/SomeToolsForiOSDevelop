@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D809F13E178C3CCC000E085E /* CustomErrorTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D809F13D178C3CCC000E085E /* CustomErrorTool.m */; };
 		D823B71816B66ED1004ECC57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D823B71716B66ED1004ECC57 /* UIKit.framework */; };
 		D823B71A16B66ED1004ECC57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D823B71916B66ED1004ECC57 /* Foundation.framework */; };
 		D823B71C16B66ED1004ECC57 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D823B71B16B66ED1004ECC57 /* CoreGraphics.framework */; };
@@ -14,13 +15,12 @@
 		D823B72416B66ED1004ECC57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D823B72316B66ED1004ECC57 /* main.m */; };
 		D823B72816B66ED1004ECC57 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D823B72716B66ED1004ECC57 /* AppDelegate.m */; };
 		D823B72B16B66ED1004ECC57 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D823B72A16B66ED1004ECC57 /* ViewController.m */; };
-		D823B72E16B66ED1004ECC57 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D823B72C16B66ED1004ECC57 /* ViewController.xib */; };
 		D823B73616B66ED1004ECC57 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D823B73516B66ED1004ECC57 /* SenTestingKit.framework */; };
 		D823B73716B66ED1004ECC57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D823B71716B66ED1004ECC57 /* UIKit.framework */; };
 		D823B73816B66ED1004ECC57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D823B71916B66ED1004ECC57 /* Foundation.framework */; };
 		D823B74016B66ED1004ECC57 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D823B73E16B66ED1004ECC57 /* InfoPlist.strings */; };
 		D823B74316B66ED1004ECC57 /* SomeToolsForiOSDevelopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D823B74216B66ED1004ECC57 /* SomeToolsForiOSDevelopTests.m */; };
-		D823B74E16B66F27004ECC57 /* NSMutableArray+Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = D823B74D16B66F27004ECC57 /* NSMutableArray+Stack.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D823B74E16B66F27004ECC57 /* NSMutableArray+Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = D823B74D16B66F27004ECC57 /* NSMutableArray+Stack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D809F13D178C3CCC000E085E /* CustomErrorTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomErrorTool.m; sourceTree = "<group>"; };
+		D809F13F178C3CF0000E085E /* CustomErrorTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomErrorTool.h; sourceTree = "<group>"; };
 		D823B71316B66ED0004ECC57 /* SomeToolsForiOSDevelop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SomeToolsForiOSDevelop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D823B71716B66ED1004ECC57 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D823B71916B66ED1004ECC57 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -46,7 +48,6 @@
 		D823B72716B66ED1004ECC57 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D823B72916B66ED1004ECC57 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D823B72A16B66ED1004ECC57 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D823B72D16B66ED1004ECC57 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		D823B73416B66ED1004ECC57 /* SomeToolsForiOSDevelopTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SomeToolsForiOSDevelopTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D823B73516B66ED1004ECC57 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		D823B73D16B66ED1004ECC57 /* SomeToolsForiOSDevelopTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SomeToolsForiOSDevelopTests-Info.plist"; sourceTree = "<group>"; };
@@ -81,11 +82,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D823B70816B66ED0004ECC57 = {
+		D809F140178C4C2B000E085E /* ErrorTool */ = {
+			isa = PBXGroup;
+			children = (
+				D809F13F178C3CF0000E085E /* CustomErrorTool.h */,
+				D809F13D178C3CCC000E085E /* CustomErrorTool.m */,
+			);
+			name = ErrorTool;
+			sourceTree = "<group>";
+		};
+		D809F141178C4C35000E085E /* Stack */ = {
 			isa = PBXGroup;
 			children = (
 				D823B74C16B66F27004ECC57 /* NSMutableArray+Stack.h */,
 				D823B74D16B66F27004ECC57 /* NSMutableArray+Stack.m */,
+			);
+			name = Stack;
+			sourceTree = "<group>";
+		};
+		D823B70816B66ED0004ECC57 = {
+			isa = PBXGroup;
+			children = (
+				D809F141178C4C35000E085E /* Stack */,
+				D809F140178C4C2B000E085E /* ErrorTool */,
 				D823B71D16B66ED1004ECC57 /* SomeToolsForiOSDevelop */,
 				D823B73B16B66ED1004ECC57 /* SomeToolsForiOSDevelopTests */,
 				D823B71616B66ED1004ECC57 /* Frameworks */,
@@ -120,7 +139,6 @@
 				D823B72716B66ED1004ECC57 /* AppDelegate.m */,
 				D823B72916B66ED1004ECC57 /* ViewController.h */,
 				D823B72A16B66ED1004ECC57 /* ViewController.m */,
-				D823B72C16B66ED1004ECC57 /* ViewController.xib */,
 				D823B71E16B66ED1004ECC57 /* Supporting Files */,
 			);
 			path = SomeToolsForiOSDevelop;
@@ -227,7 +245,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D823B72216B66ED1004ECC57 /* InfoPlist.strings in Resources */,
-				D823B72E16B66ED1004ECC57 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +283,7 @@
 				D823B72816B66ED1004ECC57 /* AppDelegate.m in Sources */,
 				D823B72B16B66ED1004ECC57 /* ViewController.m in Sources */,
 				D823B74E16B66F27004ECC57 /* NSMutableArray+Stack.m in Sources */,
+				D809F13E178C3CCC000E085E /* CustomErrorTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,14 +312,6 @@
 				D823B72116B66ED1004ECC57 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		D823B72C16B66ED1004ECC57 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D823B72D16B66ED1004ECC57 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 		D823B73E16B66ED1004ECC57 /* InfoPlist.strings */ = {
@@ -435,6 +445,7 @@
 				D823B74816B66ED1004ECC57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D823B74916B66ED1004ECC57 /* Build configuration list for PBXNativeTarget "SomeToolsForiOSDevelopTests" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +454,7 @@
 				D823B74B16B66ED1004ECC57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

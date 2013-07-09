@@ -10,9 +10,17 @@
 
 @interface NSMutableArray (Stack)
 
+- (id)         initStack;
+- (void)       ClearStackWithError :(NSError **) error;
+- (BOOL)       isEmpty;
+- (NSInteger)  StatckLength;
+- (BOOL)       push:(id)object WithError : (NSError **) error;
+- (id)         popWithError : (NSError **) error;
+- (id)         getTopWithError :(NSError **) error;
+//- (void)       DestroyStackwithError :(NSError **) error;
 
-- (void) push:(id)object;
-- (id) pop;
-- (void) dropBottom;
+
+//- (void) dropBottomWithError : (NSError **) error;
+
 
 @end
