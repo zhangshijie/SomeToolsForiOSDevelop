@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D809F13E178C3CCC000E085E /* CustomErrorTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D809F13D178C3CCC000E085E /* CustomErrorTool.m */; };
+		D810B08218115D480014C482 /* something.m in Sources */ = {isa = PBXBuildFile; fileRef = D810B08118115D480014C482 /* something.m */; };
 		D8162CBE178CD87700DB6BA1 /* NSMutableArray+Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = D8162CBD178CD87700DB6BA1 /* NSMutableArray+Queue.m */; };
 		D823B71816B66ED1004ECC57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D823B71716B66ED1004ECC57 /* UIKit.framework */; };
 		D823B71A16B66ED1004ECC57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D823B71916B66ED1004ECC57 /* Foundation.framework */; };
@@ -37,6 +38,8 @@
 /* Begin PBXFileReference section */
 		D809F13D178C3CCC000E085E /* CustomErrorTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomErrorTool.m; sourceTree = "<group>"; };
 		D809F13F178C3CF0000E085E /* CustomErrorTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomErrorTool.h; sourceTree = "<group>"; };
+		D810B08018115D480014C482 /* something.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = something.h; sourceTree = "<group>"; };
+		D810B08118115D480014C482 /* something.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = something.m; sourceTree = "<group>"; };
 		D8162CBC178CD87700DB6BA1 /* NSMutableArray+Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Queue.h"; sourceTree = "<group>"; };
 		D8162CBD178CD87700DB6BA1 /* NSMutableArray+Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Queue.m"; sourceTree = "<group>"; };
 		D823B71316B66ED0004ECC57 /* SomeToolsForiOSDevelop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SomeToolsForiOSDevelop.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +118,8 @@
 		D823B70816B66ED0004ECC57 = {
 			isa = PBXGroup;
 			children = (
+				D810B08018115D480014C482 /* something.h */,
+				D810B08118115D480014C482 /* something.m */,
 				D8162CBB178CD85D00DB6BA1 /* Queue */,
 				D809F141178C4C35000E085E /* Stack */,
 				D809F140178C4C2B000E085E /* ErrorTool */,
@@ -298,6 +303,7 @@
 				D823B74E16B66F27004ECC57 /* NSMutableArray+Stack.m in Sources */,
 				D809F13E178C3CCC000E085E /* CustomErrorTool.m in Sources */,
 				D8162CBE178CD87700DB6BA1 /* NSMutableArray+Queue.m in Sources */,
+				D810B08218115D480014C482 /* something.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
